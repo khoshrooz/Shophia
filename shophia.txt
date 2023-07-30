@@ -1,0 +1,9 @@
+krinkesDecorPERSONALUSE f-s 72px r
+lato r f-s 11px
+lato bold 12px
+[PlayfairDisplay] italic 18px bold italic
+playfairDisplay  italic bolditalic
+#d9bf8f
+#f09d66
+#feab12
+#141414

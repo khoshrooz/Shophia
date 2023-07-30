@@ -1,0 +1,72 @@
+.gallery {
+  padding: 70px 80px;
+  &__hand {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.3fr 1.2fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    &-figure {
+      position: relative;
+      &:hover &-btn {
+        transform: translate(-50%, -25%);
+        opacity: 1;
+      }
+      &:hover span {
+        opacity: 1;
+      }
+      &:hover img {
+        outline: none;
+      }
+      img {
+        display: block;
+        width: 100%;
+        outline: 3px solid #fff;
+        outline-offset: -22px;
+      }
+      &-btn {
+        padding: 14px 16px;
+        font-size: 15px;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, 50%);
+        transition: all ease-in 0.6s;
+      }
+    }
+    &-1 {
+      grid-column: 1 / 2;
+      grid-row: 1/2;
+    }
+    &-2 {
+      grid-column: 2 / 3;
+      grid-row: 1 / span 2;
+      img {
+        height: 100%;
+      }
+    }
+    &-3 {
+      grid-column: 3 / 4;
+      grid-row: 1/2;
+    }
+    &-4 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    &-5 {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+    span {
+      width: 87%;
+      height: 87%;
+      background-color: rgba(#000, 0.4);
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      opacity: 0;
+      transition: all ease-in 0.4s;
+    }
+  }
+}

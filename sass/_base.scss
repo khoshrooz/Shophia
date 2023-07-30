@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Krinkes Decor PERSONAL USE";
+  src: url("./../font/KrinkesDecorPERSONAL.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("./../font/Lato-Bold.ttf"), url("./../font/Lato-Regular.ttf"),
+    url("./../font/Lato-Italic.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("./../font/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}
+
+// colors
+$-color-primary: #d9bf8f;
+$-color-secondry: #f09d66;
+$-color-tertiary: #feab12;
+$-color-dark: #141414;
+//  colors
+//
+//
+//
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  color: #fff;
+  background-color: $-color-secondry;
+  text-transform: uppercase;
+  border: none;
+  font-family: "lato";
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  h2 {
+    font-family: "PlayfairDisplay";
+    font-size: 30px;
+    margin: 0 30px;
+  }
+  &-square {
+    display: inline-block;
+    background-color: $-color-primary;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+  }
+  &-line {
+    display: inline-block;
+    background-color: #eaeaea;
+    height: 1px;
+    width: 30%;
+  }
+}
