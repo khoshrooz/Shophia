@@ -418,3 +418,59 @@
       height: 60px; }
   .collection__brand-heading {
     gap: 82px; }
+
+.footer {
+  padding: 80px;
+  background-color: #141414; }
+  .footer__navigation {
+    display: flex;
+    gap: 120px; }
+    .footer__navigation-category h3 {
+      font-size: 16px;
+      font-family: "lato";
+      color: #fff;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .footer__navigation-category span {
+      font-family: "PlayfairDisplay";
+      text-transform: none; }
+    .footer__navigation-category ul {
+      list-style: none;
+      font-family: "lato";
+      font-size: 14px; }
+    .footer__navigation-category li {
+      margin-bottom: 18px; }
+    .footer__navigation-category a {
+      color: #525251;
+      text-decoration: none;
+      transition: all ease-in 0.2s; }
+      .footer__navigation-category a:hover {
+        color: #74746d; }
+  .footer__svg-1, .footer__svg-2, .footer__svg-3, .footer__svg-4, .footer__svg-5 {
+    width: 50px;
+    height: 50px;
+    fill: #000;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: 13px;
+    margin: 5px 20px 40px 0; }
+  .footer__form input[type="text"] {
+    width: 101%;
+    padding: 13px 0 13px 18px;
+    background-color: #141414;
+    color: #74746d;
+    border: solid 1px #525251;
+    border-radius: 0; }
+    .footer__form input[type="text"]:focus {
+      outline: none; }
+  .footer__form input[type="submit"] {
+    padding: 11px 20px;
+    margin-left: -121px;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    background-color: #323030;
+    color: #fff;
+    cursor: pointer; }

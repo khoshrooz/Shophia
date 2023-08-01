@@ -1,0 +1,89 @@
+.footer {
+    padding: 80px;
+    background-color: $-color-dark;
+    &__navigation {
+        display: flex;
+        gap: 120px;
+        &-category {
+            h3 {
+                font-size: 16px;
+                font-family: "lato";
+                color: #fff;
+                margin-bottom: 50px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            span {
+                font-family: "PlayfairDisplay";
+                text-transform: none;
+            }
+            ul {
+                list-style: none;
+                font-family: "lato";
+                font-size: 14px;
+            }
+            li {
+                margin-bottom: 18px;
+            }
+            a {
+                color: #525251;
+                text-decoration: none;
+                transition: all ease-in 0.2s;
+                &:hover {
+                    color: #74746d;
+                }
+            }
+        }
+    }
+    &__svg {
+        &-1,
+        &-2,
+        &-3,
+        &-4,
+        &-5 {
+            width: 50px;
+            height: 50px;
+            fill: #000;
+            background-color: #fff;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            padding: 13px;
+            margin: 5px 20px 40px 0;
+        }
+    }
+    &__form {
+        input[type="text"] {
+            width: 101%;
+            padding: 13px 0 13px 18px;
+            background-color: $-color-dark;
+            color: #74746d;
+            border: solid 1px #525251;
+            border-radius: 0;
+            &:focus {
+                outline: none;
+            }
+        }
+        input[type="submit"] {
+            padding: 11px 20px;
+            margin-left: -121px;
+            border-radius: 0;
+            border: none;
+            text-transform: uppercase;
+            background-color: #323030;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+// position: relative;
+//             &::before {
+//                 content: "";
+//                 background-color: #fff;
+//                 width: 45px;
+//                 height: 45px;
+//                 border-radius: 100%;
+//                 position: absolute;
+//                 top: 0;
+//                 left: 20px;
+//             }
