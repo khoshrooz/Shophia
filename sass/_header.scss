@@ -1,10 +1,16 @@
 .header {
   &__tabar1 {
     background-color: #f2f2f2;
-    padding: 15px 80px;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 850px) {
+      justify-content: center;
+      &-phone {
+        display: none;
+      }
+    }
     &-phone {
       svg {
         width: 12px;
@@ -19,15 +25,57 @@
     }
   }
   &__tabar2 {
-    padding: 10px 80px;
+    span {
+      display: none;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 850px) {
+      justify-content: end;
+      gap: 150px;
+      position: relative;
+      span {
+        display: inline-block;
+        width: 35px;
+        height: 1px;
+        position: absolute;
+        top: 38px;
+        left: 4px;
+        background-color: #000;
+        &::after,
+        &::before {
+          content: "";
+          width: 35px;
+          height: 1px;
+          display: inline-block;
+          background-color: #000;
+          left: 0px;
+          position: absolute;
+        }
+        &::after {
+          top: -10px;
+        }
+        &::before {
+          top: 11px;
+        }
+      }
+    }
     h1 {
       font-family: "Krinkes Decor PERSONAL USE";
       font-size: 72px;
       font-weight: 400;
       margin-left: 105px;
+      @media screen and (max-width: 1150px) {
+        margin-left: -92px;
+      }
+      @media screen and (max-width: 850px) {
+        font-size: 45px;
+        margin-top: 5px;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 30px;
+      }
     }
   }
   &-contain {
@@ -37,6 +85,9 @@
     max-height: 690px;
     margin-top: 10px;
     width: 100%;
+    @media screen and (max-width: 850px) {
+      margin-top: 0;
+    }
   }
   &-text {
     position: absolute;
@@ -46,6 +97,19 @@
     border: 1px solid #fff;
     outline-offset: 7px;
     outline: 2px solid #fff;
+    @media screen and (max-width: 1200px) {
+      padding: 19px 7px;
+      left: 42.5%;
+    }
+    @media screen and (max-width: 1050px) {
+      padding: 15px 5px;
+    }
+    @media screen and (max-width: 1000px) {
+      left: 41.5%;
+    }
+    @media screen and (max-width: 850px) {
+      left: 40%;
+    }
   }
   &-heading {
     text-align: center;
@@ -57,15 +121,51 @@
       font-size: 19px;
       margin-bottom: 30px;
       margin-top: 2px;
+      @media screen and (max-width: 1200px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 1050px) {
+        font-size: 13px;
+      }
+      @media screen and (max-width: 850px) {
+        font-size: 11px;
+      }
     }
     h1 {
       font-size: 58px;
       font-weight: 400;
       margin-bottom: 30px;
+      @media screen and (max-width: 1200px) {
+        font-size: 45px;
+      }
+      @media screen and (max-width: 1050px) {
+        font-size: 37px;
+      }
+      @media screen and (max-width: 850px) {
+        font-size: 26px;
+      }
     }
     h3 {
       font-size: 31px;
       margin-top: -15px;
+      @media screen and (max-width: 1200px) {
+        font-size: 25px;
+        span {
+          font-size: 19px;
+        }
+      }
+      @media screen and (max-width: 1050px) {
+        font-size: 21px;
+        span {
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 850px) {
+        font-size: 18px;
+        span {
+          font-size: 13px;
+        }
+      }
       span {
         font-size: 25px;
         margin-right: 10px;
@@ -78,7 +178,27 @@
     justify-content: center;
     gap: 20px;
     position: relative;
-    &::after {
+    @media screen and (max-width: 1050px) {
+      gap: 15px;
+      h2 {
+        font-size: 16px;
+      }
+    }
+    @media screen and (max-width: 850px) {
+      gap: 7px;
+      &::after,
+      &::before {
+        width: 20px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      span {
+        width: 35px;
+      }
+    }
+    &::after,
+    &::before {
       content: "";
       width: 30px;
       height: 1px;
@@ -88,13 +208,8 @@
       background-color: #fff;
     }
     &::before {
-      content: "";
-      width: 30px;
-      height: 1px;
-      position: absolute;
       left: 25px;
       bottom: 48px;
-      background-color: #fff;
     }
     h2 {
       font-size: 20px;
@@ -113,6 +228,23 @@
     position: absolute;
     bottom: 20%;
     left: 44.5%;
+    @media screen and (max-width: 1200px) {
+      padding: 10px 20px;
+      font-size: 18px;
+      left: 46%;
+    }
+    @media screen and (max-width: 950px) {
+      bottom: 17%;
+      left: 45%;
+    }
+    @media screen and (max-width: 900px) {
+      bottom: 12%;
+    }
+    @media screen and (max-width: 850px) {
+      width: 100%;
+      bottom: -9%;
+      left: 0;
+    }
   }
   &-scrol {
     position: absolute;
@@ -133,13 +265,22 @@
   }
   &-information {
     display: flex;
-    padding: 70px 80px;
+    justify-content: center;
+    padding: 80px 0;
+    @media screen and (max-width: 735px) {
+      display: none;
+    }
     svg {
       width: 40px;
       height: 40px;
       fill: #fff;
       margin-right: 15px;
       margin-top: 5px;
+      @media screen and (max-width: 1190px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
     }
     &-1 {
       display: flex;
@@ -151,6 +292,15 @@
         font-size: 30px;
         text-transform: uppercase;
         font-weight: 700;
+        @media screen and (max-width: 1326px) {
+          font-size: 25px;
+        }
+        @media screen and (max-width: 1190px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 735px) {
+          font-size: 15px;
+        }
       }
       span {
         font-size: 14px;
@@ -158,22 +308,37 @@
         font-weight: 400;
         display: block;
         margin-top: 3px;
+        @media screen and (max-width: 1150px) {
+          font-size: 12px;
+        }
+        @media screen and (max-width: 735px) {
+          font-size: 12px;
+        }
       }
     }
     &-plane {
       background-color: $-color-primary;
       padding: 20px 104px 20px 30px;
       clip-path: polygon(0% 0%, 88% 0%, 100% 50%, 88% 100%, 0% 100%);
+      @media screen and (max-width: 1042px) {
+        padding: 20px 27px 20px 20px;
+      }
     }
     &-clock {
       background-color: $-color-dark;
       padding: 20px 49px;
       clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
+      @media screen and (max-width: 1042px) {
+        padding: 20px 27px;
+      }
     }
     &-lifebuoy {
       background-color: $-color-primary;
-      padding: 20px 63px 20px 63px;
+      padding: 20px 63px;
       clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 11% 100%, 0% 50%);
+      @media screen and (max-width: 1042px) {
+        padding: 20px;
+      }
     }
   }
 }
@@ -183,17 +348,28 @@
     display: flex;
     gap: 35px;
     list-style: none;
+    @media screen and (max-width: 550px) {
+      gap: 15px;
+    }
     a {
       text-decoration: none;
       font-family: "lato";
       text-transform: uppercase;
       font-size: 11px;
       color: #000;
-      border-right: solid 1px #000;
-      padding-right: 35px;
+      @media screen and (max-width: 550px) {
+        font-size: 8px;
+      }
       &:hover,
       &:active {
         color: $-color-secondry;
+      }
+    }
+    li:not(:last-child) {
+      border-right: solid 1px #000;
+      padding-right: 35px;
+      @media screen and (max-width: 550px) {
+        padding-right: 15px;
       }
     }
   }
@@ -209,38 +385,45 @@
     color: #000;
     font-size: 18px;
   }
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
 }
 
 .navigation3 {
   display: flex;
   align-items: center;
-  gap: 35px;
-  svg {
-    fill: $-color-primary;
-    outline: 2px solid $-color-primary;
-    border-radius: 50%;
-    cursor: pointer;
+  gap: 15px;
+  nav {
+    a {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      border: 2px solid $-color-primary;
+      border-radius: 100%;
+      position: relative;
+      @media screen and (max-width: 1150px) {
+        display: none;
+      }
+    }
   }
   &__svg {
-    &-1 {
-      width: 20px;
-      height: 20px;
-      outline-offset: 7px;
-    }
-    &-2 {
-      width: 14px;
-      height: 14px;
-      outline-offset: 10px;
-    }
-    &-3 {
-      width: 14px;
-      height: 14px;
-      outline-offset: 10px;
-    }
+    &-1,
+    &-2,
+    &-3,
     &-4 {
-      width: 14px;
-      height: 14px;
-      outline-offset: 10px;
+      fill: $-color-primary;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+    &-1 {
+      width: 22px;
+      height: 22px;
+      top: 9px;
+      left: 9px;
     }
   }
   &__select {
@@ -251,5 +434,13 @@
     font-family: "lato";
     font-weight: 700;
     font-size: 12px;
+    @media screen and (max-width: 850px) {
+      margin-left: 0;
+      padding: 10px 17px;
+    }
+    @media screen and (max-width: 650px) {
+      padding: 7px 10px;
+      font-size: 10px;
+    }
   }
 }

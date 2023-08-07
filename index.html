@@ -9,60 +9,69 @@
 </head>
 
 <body>
-    <header class="header">
-        <section class="header__tabar1">
-            <div class="header__tabar1-phone">
-                <svg>
+    <header class="header" id="header">
+
+        <section class="header__tabar1 ">
+            <div class="main-container header__tabar1 ">
+                <div class=" header__tabar1-phone">
+                    <svg>
             <use xlink:href="./img/sprite.svg#phone"></use>
           </svg>
-                <a href="tel:001 555 801">Call +001 555 801</a>
+                    <a href="tel:001 555 801">Call +001 555 801</a>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li><a href="#">welcome msg!</a></li>
+                        <li><a href="#">my account</a></li>
+                        <li><a href="#">my whistlist</a></li>
+                        <li><a href="#">login</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li><a href="#">welcome msg!</a></li>
-                    <li><a href="#">my account</a></li>
-                    <li><a href="#">my whistlist</a></li>
-                    <li><a href="#">login</a></li>
-                </ul>
-            </nav>
         </section>
-        <section class="header__tabar2">
+
+        <section class="header__tabar2 main-container">
+            <span></span>
             <ul class="navigation2">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Pages</a></li>
             </ul>
-            <h1>Shophia</h1>
-            <nav class="navigation3">
-                <svg class="navigation3__svg-1">
-            <use xlink:href="./img/sprite.svg#social-facebook"></use>
-          </svg>
-                <svg class="navigation3__svg-2">
-            <use xlink:href="./img/sprite.svg#twitter"></use>
-          </svg>
 
-                <svg class="navigation3__svg-3">
+            <h1>Shophia</h1>
+            <div class="navigation3">
+                <nav>
+                    <a href="https://facebook.com" target="_blank"> <svg class="navigation3__svg-1">
+            <use xlink:href="./img/sprite.svg#social-facebook"></use>
+          </svg></a>
+                    <a href="https://twitter.com" target="_blank"> <svg class="navigation3__svg-2">
+            <use xlink:href="./img/sprite.svg#twitter"></use>
+          </svg></a>
+
+                    <a href="https://pintrest.com" target="_blank"><svg class="navigation3__svg-3">
             <use xlink:href="./img/sprite.svg#pinterest-with-circle"></use>
-          </svg>
-                <svg class="navigation3__svg-4">
+          </svg></a>
+                    <a href="https://instagram.com" target="_blank"> <svg class="navigation3__svg-4">
             <use xlink:href="./img/sprite.svg#instagram"></use>
-          </svg>
+          </svg></a>
+                </nav>
                 <select class="navigation3__select" id="for" form="payment">
             <option value="RUPIAH">RUPIAH</option>
             <option value="DOLAR">DOLAR</option>
             <option value="DERHAM">DERHAM</option>
             <option value="POND">POND</option>
           </select>
-            </nav>
+            </div>
         </section>
         <figure class="header-contain">
-            <img src="./img/Shopia (1).png" alt="header image" class="header-image" />
-            <figcaption class="header-text">
-                <div class="header-heading">
+            <img src="./img/Shopia.png" alt="header image" class="header-image" />
+            <source media="(min-width:900px)" srcset="" src="./img/smallheader.png ">
+            <figcaption class="header-text ">
+                <div class="header-heading ">
                     <h2>mid-season</h2>
                     <h1>sale</h1>
-                    <div class="header-upto">
+                    <div class="header-upto ">
                         <div><span></span></div>
                         <h2>up to</h2>
                         <div><span></span></div>
@@ -70,8 +79,8 @@
                     <h3>50 <span>%</span> off</h3>
                 </div>
             </figcaption>
-            <button class="header-btn btn">shop now</button>
-            <div class="header-scrol">
+            <button class="header-btn btn ">shop now</button>
+            <div class="header-scrol ">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -79,20 +88,20 @@
             </div>
         </figure>
 
-        <div class="header-information">
-            <div class="header-information-1 header-information-plane">
+        <div class="header-information main-container ">
+            <div class="header-information-1 header-information-plane ">
                 <svg>
             <use xlink:href="./img/sprite.svg#plane "></use>
           </svg>
                 <h1>free shiping <span>In Order Min $200</span></h1>
             </div>
-            <div class="header-information-1 header-information-clock">
+            <div class="header-information-1 header-information-clock ">
                 <svg>
             <use xlink:href="./img/sprite.svg#clock-o "></use>
           </svg>
                 <h1>30-days returns <span>Money Back Guarantee</span></h1>
             </div>
-            <div class="header-information-1 header-information-lifebuoy">
+            <div class="header-information-1 header-information-lifebuoy ">
                 <svg>
             <use xlink:href="./img/sprite.svg#lifebuoy "></use>
           </svg>
@@ -100,199 +109,227 @@
             </div>
         </div>
     </header>
-    <section class="gallery">
-        <div class="gallery__heading heading">
-            <span class="heading-line"></span>
-            <span class="heading-square"></span>
+    <section class="gallery main-container ">
+        <div class="gallery__heading heading ">
+            <span class="heading-line "></span>
+            <span class="heading-square "></span>
             <h2>HandPicked</h2>
-            <span class="heading-square"></span>
-            <span class="heading-line"></span>
+            <span class="heading-square "></span>
+            <span class="heading-line "></span>
         </div>
-        <div class="gallery__hand">
-            <figure class="gallery__hand-1 gallery__hand-figure">
-                <img src="./img/black shoes.png" alt=" shoes" />
+        <div class="gallery__hand ">
+            <figure class="gallery__hand-1 gallery__hand-figure ">
+                <img src="./img/black shoes.png " alt=" shoes " />
 
-                <button class="gallery__hand-figure-btn btn">shop now</button>
+                <button class="gallery__hand-figure-btn btn ">shop now</button>
                 <span></span>
             </figure>
-            <figure class="gallery__hand-2 gallery__hand-figure">
-                <img src="./img/collection.png" alt="a model" />
+            <figure class="gallery__hand-2 gallery__hand-figure ">
+                <img src="./img/collection.png " alt="a model " />
             </figure>
-            <figure class="gallery__hand-3 gallery__hand-figure">
-                <img src="./img/neck.png" alt="hand sale" />
+            <figure class="gallery__hand-3 gallery__hand-figure ">
+                <img src="./img/neck.png " alt="hand sale " />
 
-                <button class="gallery__hand-figure-btn btn">shop now</button>
+                <button class="gallery__hand-figure-btn btn ">shop now</button>
                 <span></span>
             </figure>
-            <figure class="gallery__hand-4 gallery__hand-figure">
-                <img src="./img/hand.png" alt="handband" />
+            <figure class="gallery__hand-4 gallery__hand-figure ">
+                <img src="./img/hand.png " alt="handband " />
 
-                <button class="gallery__hand-figure-btn btn">shop now</button>
+                <button class="gallery__hand-figure-btn btn ">shop now</button>
                 <span></span>
             </figure>
-            <figure class="gallery__hand-5 gallery__hand-figure">
-                <img src="./img/keys.png" alt="keys" />
-                <button class="gallery__hand-figure-btn btn">shop now</button>
+            <figure class="gallery__hand-5 gallery__hand-figure ">
+                <img src="./img/keys.png " alt="keys " />
+                <button class="gallery__hand-figure-btn btn ">shop now</button>
                 <span></span>
             </figure>
         </div>
     </section>
-    <section class="collection">
-        <div class="collection__heading heading">
-            <span class="heading-line"></span>
-            <span class="heading-square"></span>
+    <section class="collection ">
+        <div class="collection__heading heading ">
+            <span class="heading-line "></span>
+            <span class="heading-square "></span>
             <h2>Summer Collection</h2>
-            <span class="heading-square"></span>
-            <span class="heading-line"></span>
+            <span class="heading-square "></span>
+            <span class="heading-line "></span>
         </div>
-        <div class="collection__gallery">
-            <figure class="collection__image">
-                <img src="./img/1man.png" alt=" a man" />
-                <button class="collection__btn">+ add to cart</button>
-                <span></span>
-            </figure>
-            <figure class="collection__image">
-                <img src="./img/2 man.png" alt=" a woman" />
-                <button class="collection__btn">+ add to cart</button>
-            </figure>
-            <figure class="collection__image">
-                <img src="./img/3 man.png" alt="a woman" />
-                <button class="collection__btn">+ add to cart</button>
-            </figure>
-            <figure class="collection__image">
-                <img src="./img/4man.png" alt=" a man" />
-                <button class="collection__btn">+ add to cart</button>
-                <span></span>
-            </figure>
-            <figure class="collection__image">
-                <img src="./img/5 man.png" alt="a woman" />
-                <button class="collection__btn">+ add to cart</button>
-                <span></span>
-            </figure>
-            <figure class="collection__image">
-                <img src="./img/6 man.png" alt="a woman" />
-                <button class="collection__btn">+ add to cart</button>
-            </figure>
-            <figure class="collection__image">
-                <img src="./img/7th man.png" alt="a woman" />
-                <button class="collection__btn">+ add to cart</button>
-            </figure>
-            <figure class="collection__image">
-                <img src="./img/8man.png" alt="a man" />
-                <button class="collection__btn">+ add to cart</button>
-                <span></span>
-            </figure>
+        <div class="main-container ">
+            <div class="collection__gallery ">
+                <figure class="collection__image ">
+                    <img src="./img/1man.png " alt=" a man " />
+                    <button class="collection__btn ">+ add to cart</button>
+                    <span></span>
+                </figure>
+                <figure class="collection__image ">
+                    <img src="./img/2 man.png " alt=" a woman " />
+                    <button class="collection__btn ">+ add to cart</button>
+                </figure>
+                <figure class="collection__image ">
+                    <img src="./img/3 man.png " alt="a woman " />
+                    <button class="collection__btn ">+ add to cart</button>
+                </figure>
+                <figure class="collection__image ">
+                    <img src="./img/4man.png " alt=" a man " />
+                    <button class="collection__btn ">+ add to cart</button>
+                    <span></span>
+                </figure>
+                <figure class="collection__image ">
+                    <img src="./img/5 man.png " alt="a woman " />
+                    <button class="collection__btn ">+ add to cart</button>
+                    <span></span>
+                </figure>
+                <figure class="collection__image ">
+                    <img src="./img/6 man.png " alt="a woman " />
+                    <button class="collection__btn ">+ add to cart</button>
+                </figure>
+                <figure class="collection__image ">
+                    <img src="./img/7th man.png " alt="a woman " />
+                    <button class="collection__btn ">+ add to cart</button>
+                </figure>
+                <figure class="collection__image ">
+                    <img src="./img/8man.png " alt="a man " />
+                    <button class="collection__btn ">+ add to cart</button>
+                    <span></span>
+                </figure>
+            </div>
         </div>
-        <div class="collection__brand-heading heading">
-            <span class="heading-line"></span>
-            <span class="heading-square"></span>
+        <div class="collection__brand-heading heading ">
+            <span class="heading-line "></span>
+            <span class="heading-square "></span>
             <h2>Our Brand</h2>
-            <span class="heading-square"></span>
-            <span class="heading-line"></span>
+            <span class="heading-square "></span>
+            <span class="heading-line "></span>
         </div>
-        <div class="collection__brand">
-            <img src="./img/brand1.png" alt=" bakery" />
-            <img src="./img/brand 2.png" alt="laralies" />
-            <img src="./img/brand 3.png" alt="harvest" />
-            <img src="./img/brand 4.png" alt="pandlock" />
-            <img src="./img/brand 5.png" alt="spectrum" />
-            <img src="./img/brand 6.png" alt="home energy" />
+        <div class="collection__brand main-container ">
+            <img src="./img/brand1.png " alt=" bakery " />
+            <img src="./img/brand2.png " alt="laralies " />
+            <img src="./img/brand3.png " alt="harvest " />
+            <img src="./img/brand4.png " alt="pandlock " />
+            <img src="./img/brand5.png " alt="spectrum " />
+            <img src="./img/brand6.png " alt="home energy " />
         </div>
     </section>
-    <section class="customers">
-        <div class="customers-heading heading">
-            <span class="heading-line"></span>
-            <span class="heading-square"></span>
+    <section class="customers ">
+        <div class="customers-heading heading ">
+            <span class="heading-line "></span>
+            <span class="heading-square "></span>
             <h2>Customers Says</h2>
-            <span class="heading-square"></span>
-            <span class="heading-line"></span>
+            <span class="heading-square "></span>
+            <span class="heading-line "></span>
         </div>
-        <div class="customers__contain">
-            <figure class="customers__contain-1">
-                <img src="./img/a woman.png" alt="a woman" />
-                <figcaption class="customers__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sint Lorem ipsum dolor sit, eos.
-                    <h2>Sandra Dewei</h2>
-                    <h3>fashion stylist</h3>
-                </figcaption>
-            </figure>
-            <figure class="customers__contain-2">
-                <img src="./img/a man.png" alt="a man" />
-                <figcaption class="customers__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sint Lorem ipsum dolor sit, eos.
-                    <h2>Shaheer sheikh</h2>
-                    <h3>designer</h3>
-                </figcaption>
-            </figure>
+        <div class="customers__contain ">
+            <div class=" customers__contain main-container ">
+                <figure class="customers__contain-1 ">
+                    <img src="./img/customer1.png " alt="a woman " />
+                    <figcaption class="customers__text ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sint Lorem ipsum dolor sit, eos.
+                        <h2>Sandra Dewei</h2>
+                        <h3>fashion stylist</h3>
+                    </figcaption>
+                </figure>
+                <figure class="customers__contain-2 ">
+                    <img src="./img/customer2.png " alt="a man " />
+                    <figcaption class="customers__text ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sint Lorem ipsum dolor sit, eos.
+                        <h2>Shaheer sheikh</h2>
+                        <h3>designer</h3>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
     </section>
-    <footer class="footer">
-        <nav class="footer__navigation">
-            <div class="footer__navigation-category">
-                <h3>SHOPS</h3>
-                <ul>
-                    <li><a href="#">New In</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Bags & Accessories</a></li>
-                    <li><a href="#">Top Brands</a></li>
-                    <li><a href="#">Sale & Special Offers</a></li>
-                    <li><a href="#">LookBook</a></li>
-                </ul>
+    <footer class="footer ">
+        <nav class="footer__navigation main-container ">
+            <div class="flex-1 gap">
+                <div class="footer__navigation-category">
+                    <h3>SHOPS</h3>
+                    <ul>
+                        <li><a href="# ">New In</a></li>
+                        <li><a href="# ">Women</a></li>
+                        <li><a href="# ">Men</a></li>
+                        <li><a href="# ">Shoes</a></li>
+                        <li><a href="# ">Bags & Accessories</a></li>
+                        <li><a href="# ">Top Brands</a></li>
+                        <li><a href="# ">Sale & Special Offers</a></li>
+                        <li><a href="# ">LookBook</a></li>
+                    </ul>
+                </div>
+                <div class="footer__navigation-category ">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li><a href="# ">About us</a></li>
+                        <li><a href="# ">Customer Service</a></li>
+                        <li><a href="# ">New Collection</a></li>
+                        <li><a href="# ">Best Sellers</a></li>
+                        <li><a href="# ">Manufacturers</a></li>
+                        <li><a href="# ">Privacy Policy</a></li>
+                        <li><a href="# ">Terms & Condition</a></li>
+                        <li><a href="# ">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__navigation-category ">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <ul>
+                        <li><a href="# ">Search Terms</a></li>
+                        <li><a href="# ">Advance Search</a></li>
+                        <li><a href="# ">Orders & Returns</a</li>
+                    <li><a href="# ">Contact Us</a></li>
+                        <li><a href="# ">RSS</a></li>
+                        <li><a href="# ">Help & FAQs</a></li>
+                        <li><a href="# ">Consultant</a></li>
+                        <li><a href="# ">Store Locations</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer__navigation-category">
-                <h3>INFORMATION</h3>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Customer Service</a></li>
-                    <li><a href="#">New Collection</a></li>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li><a href="#">Manufacturers</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer__navigation-category">
-                <h3>CUSTOMER SERVICE</h3>
-                <ul>
-                    <li><a href="#">Search Terms</a></li>
-                    <li><a href="#">Advance Search</a></li>
-                    <li><a href="#">Orders & Returns</a</li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">RSS</a></li>
-                    <li><a href="#">Help & FAQs</a></li>
-                    <li><a href="#">Consultant</a></li>
-                    <li><a href="#">Store Locations</a></li>
-                </ul>
-            </div>
-            <div class="footer__navigation-category">
-                <h3>STAY CONNECTED</h3>
-                <div class="footer__svg">
-                    <a href="https://facebook.com" target="_blank"><svg class="footer__svg-1">
-              <use xlink:href="./img/sprite.svg#social-facebook"></use>
+            <div>
+                <div class="footer__navigation-category ">
+                    <h3>STAY CONNECTED</h3>
+                    <div class="footer__svg ">
+                        <a href="https://facebook.com " target="_blank "><svg class="footer__svg-1 ">
+              <use xlink:href="./img/sprite.svg#social-facebook "></use>
               
             </svg></a>
-                    <a href="https://twitter.com" target="_blank"> <svg class="footer__svg-2">
-              <use xlink:href="./img/sprite.svg#twitter"></use>
+                        <a href="https://twitter.com " target="_blank "> <svg class="footer__svg-2 ">
+              <use xlink:href="./img/sprite.svg#twitter "></use>
             </svg></a>
-                    <a href="https://instagram.com" target="_blank"> <svg class="footer__svg-3">
-              <use xlink:href="./img/sprite.svg#instagram"></use>
+                        <a href="https://instagram.com " target="_blank "> <svg class="footer__svg-3 ">
+              <use xlink:href="./img/sprite.svg#instagram "></use>
             </svg></a>
-                    <a href="https://pintrest.com" target="_blank"> <svg class="footer__svg-4">
-              <use xlink:href="./img/sprite.svg#pinterest-with-circle"></use>
+                        <a href="https://pintrest.com " target="_blank "> <svg class="footer__svg-4 ">
+              <use xlink:href="./img/sprite.svg#pinterest-with-circle "></use>
             </svg></a>
-                    <a href="https://rss.com" target="_blank"><svg class="footer__svg-5">
-              <use xlink:href="./img/sprite.svg#rss"></use>
+                        <a href="https://rss.com " target="_blank "><svg class="footer__svg-5 ">
+              <use xlink:href="./img/sprite.svg#rss "></use>
             </svg></a></div>
-                <h3>subscribe <span>in</span> our news letter</h3>
-                <form class="footer__form">
-                    <input type="text" placeholder="Enter Your Email Address" />
-                    <input type="submit" value="subscribe" />
-                </form>
+                    <h3>subscribe <span>in</span> our news letter</h3>
+                    <form class="footer__form ">
+                        <input type="text" placeholder="Enter Your Email Address " />
+                        <input type="submit" value="subscribe " />
+                    </form>
+                </div>
             </div>
         </nav>
+
+        <div class="footer__copyright ">
+            <div class="main-container flex ">
+                <div class="footer__copyright-text ">
+                    <h2>&copy;2015 Shopia Fashion Store Shopify.<br> All Rights Reserved Ecommerce Software by Shopify.<br>Designed By MoccaLabs.com</br>
+                    </h2>
+                    <div class="footer__copyright-image ">
+                        <a href="https://usa.visa.com/ " target="_blank "><img src="./img/vesa.png " alt="visa "></a>
+                        <a href="https://www.mastercard.com/ " target="_blank "><img src="./img/master.png " alt="master "></a>
+                        <a href=" "><img src="./img/amrican.png " alt="amrican "></a>
+                        <a href=" "><img src="./img/arca.png " alt="arca "></a>
+                    </div>
+                </div>
+                <a href="#header " class="footer__copyright-link ">
+                    <svg>
+                <use xlink:href="./img/sprite.svg#ctrl "></use>
+              </svg>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 

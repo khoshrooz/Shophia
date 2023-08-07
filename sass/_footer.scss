@@ -1,89 +1,174 @@
 .footer {
-    padding: 80px;
-    background-color: $-color-dark;
-    &__navigation {
-        display: flex;
-        gap: 120px;
-        &-category {
-            h3 {
-                font-size: 16px;
-                font-family: "lato";
-                color: #fff;
-                margin-bottom: 50px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
-            span {
-                font-family: "PlayfairDisplay";
-                text-transform: none;
-            }
-            ul {
-                list-style: none;
-                font-family: "lato";
-                font-size: 14px;
-            }
-            li {
-                margin-bottom: 18px;
-            }
-            a {
-                color: #525251;
-                text-decoration: none;
-                transition: all ease-in 0.2s;
-                &:hover {
-                    color: #74746d;
-                }
-            }
-        }
+  background-color: $-color-dark;
+  &__navigation {
+    display: flex;
+    gap: 120px;
+    padding: 80px 0;
+    @media screen and (max-width: 1280px) {
+      flex-direction: column;
+      align-items: center;
     }
-    &__svg {
-        &-1,
-        &-2,
-        &-3,
-        &-4,
-        &-5 {
-            width: 50px;
-            height: 50px;
-            fill: #000;
-            background-color: #fff;
-            border: 2px solid #fff;
-            border-radius: 100%;
-            padding: 13px;
-            margin: 5px 20px 40px 0;
-        }
+    @media screen and (max-width: 720px) {
+      gap: 60px;
     }
-    &__form {
-        input[type="text"] {
-            width: 101%;
-            padding: 13px 0 13px 18px;
-            background-color: $-color-dark;
+    &-category {
+      h3 {
+        font-size: 16px;
+        font-family: "lato";
+        color: #fff;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @media screen and (max-width: 720px) {
+          margin-bottom: 25px;
+          font-size: 12px;
+          letter-spacing: 2px;
+          text-align: center;
+        }
+      }
+      span {
+        font-family: "PlayfairDisplay";
+        text-transform: none;
+      }
+      ul {
+        list-style: none;
+        font-family: "lato";
+        font-size: 14px;
+        @media screen and (max-width: 720px) {
+          display: flex;
+          gap: 20px;
+          width: 90%;
+          margin: 0 auto;
+          flex-wrap: wrap;
+          justify-content: center;
+          font-size: 11px;
+        }
+      }
+      li {
+        margin-bottom: 18px;
+        @media screen and (max-width: 720px) {
+          margin-bottom: 0;
+        }
+        a {
+          color: #525251;
+          text-decoration: none;
+          transition: all ease-in 0.2s;
+          &:hover {
             color: #74746d;
-            border: solid 1px #525251;
-            border-radius: 0;
-            &:focus {
-                outline: none;
-            }
+            border-bottom: 1px solid #74746d;
+          }
         }
-        input[type="submit"] {
-            padding: 11px 20px;
-            margin-left: -121px;
-            border-radius: 0;
-            border: none;
-            text-transform: uppercase;
-            background-color: #323030;
-            color: #fff;
-            cursor: pointer;
-        }
+      }
     }
+  }
+  &__svg {
+    @media screen and (max-width: 720px) {
+      width: 69%;
+      margin: 0 auto;
+    }
+    a {
+      background-color: #fff;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      position: relative;
+      margin: 30px 20px 30px 0;
+      @media screen and (max-width: 720px) {
+        width: 40px;
+        height: 40px;
+        margin: 5px 0px 15px 0;
+      }
+    }
+    &-1,
+    &-2,
+    &-3,
+    &-4,
+    &-5 {
+      width: 20px;
+      height: 20px;
+      fill: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-1 {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    input[type="text"] {
+      width: 101%;
+      padding: 13px 130px 13px 18px;
+      background-color: $-color-dark;
+      color: #74746d;
+      border: solid 1px #525251;
+      border-radius: 0;
+      &:focus {
+        outline: none;
+      }
+    }
+    input[type="submit"] {
+      padding: 11px 19px;
+      margin-left: -122px;
+      border-radius: 0;
+      border: none;
+      text-transform: uppercase;
+      background-color: #323030;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  &__copyright {
+    border-top: 1px solid #313131;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border-style: solid;
+      border-width: 12px 18px 0 18px;
+      border-color: #313131 $-color-dark $-color-dark $-color-dark;
+    }
+    h2 {
+      font-size: 13px;
+      font-family: "lato";
+      color: #313131;
+      line-height: 25px;
+    }
+    &-image {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      img {
+        margin-right: 30px;
+      }
+    }
+    &-link {
+      background-color: #000;
+      width: 45px;
+      height: 45px;
+      border-radius: 5px;
+      position: relative;
+      margin-top: 20px;
+      svg {
+        fill: #fff;
+        width: 40px;
+        height: 40px;
+        top: 11px;
+        left: 3px;
+        position: absolute;
+      }
+    }
+  }
 }
-
-// position: relative;
-//             &::before {
-//                 content: "";
-//                 background-color: #fff;
-//                 width: 45px;
-//                 height: 45px;
-//                 border-radius: 100%;
-//                 position: absolute;
-//                 top: 0;
-//                 left: 20px;
-//             }
