@@ -239,7 +239,7 @@ html {
         .header__tabar2 span::after {
           top: -9px; }
         .header__tabar2 span::before {
-          top: 9px; } }
+          top: 10px; } }
   .header__tabar2 h1 {
     font-family: "Krinkes Decor PERSONAL USE";
     font-size: 72px;
