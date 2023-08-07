@@ -121,6 +121,9 @@
       background-color: #323030;
       color: #fff;
       cursor: pointer;
+      @media screen and (max-width: 650px) {
+        margin-left: -121px;
+      }
     }
   }
   &__copyright {

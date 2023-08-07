@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     @media screen and (max-width: 850px) {
-      justify-content: center;
+      justify-content: start;
       &-phone {
         display: none;
       }
@@ -32,21 +32,20 @@
     justify-content: space-between;
     align-items: center;
     @media screen and (max-width: 850px) {
-      justify-content: end;
-      gap: 150px;
+      padding: 0 80px;
       position: relative;
       span {
         display: inline-block;
-        width: 35px;
+        width: 30px;
         height: 1px;
         position: absolute;
-        top: 38px;
-        left: 4px;
+        top: -30px;
+        right: 0;
         background-color: #000;
         &::after,
         &::before {
           content: "";
-          width: 35px;
+          width: 30px;
           height: 1px;
           display: inline-block;
           background-color: #000;
@@ -54,10 +53,10 @@
           position: absolute;
         }
         &::after {
-          top: -10px;
+          top: -9px;
         }
         &::before {
-          top: 11px;
+          top: 9px;
         }
       }
     }
@@ -437,6 +436,7 @@
     @media screen and (max-width: 850px) {
       margin-left: 0;
       padding: 10px 17px;
+      margin-right: -77px;
     }
     @media screen and (max-width: 650px) {
       padding: 7px 10px;

@@ -198,7 +198,7 @@ html {
   justify-content: space-between; }
   @media screen and (max-width: 850px) {
     .header__tabar1 {
-      justify-content: center; }
+      justify-content: start; }
       .header__tabar1-phone {
         display: none; } }
   .header__tabar1-phone svg {
@@ -218,29 +218,28 @@ html {
     display: none; }
   @media screen and (max-width: 850px) {
     .header__tabar2 {
-      justify-content: end;
-      gap: 150px;
+      padding: 0 80px;
       position: relative; }
       .header__tabar2 span {
         display: inline-block;
-        width: 35px;
+        width: 30px;
         height: 1px;
         position: absolute;
-        top: 38px;
-        left: 4px;
+        top: -30px;
+        right: 0;
         background-color: #000; }
         .header__tabar2 span::after, .header__tabar2 span::before {
           content: "";
-          width: 35px;
+          width: 30px;
           height: 1px;
           display: inline-block;
           background-color: #000;
           left: 0px;
           position: absolute; }
         .header__tabar2 span::after {
-          top: -10px; }
+          top: -9px; }
         .header__tabar2 span::before {
-          top: 11px; } }
+          top: 9px; } }
   .header__tabar2 h1 {
     font-family: "Krinkes Decor PERSONAL USE";
     font-size: 72px;
@@ -569,7 +568,8 @@ html {
     @media screen and (max-width: 850px) {
       .navigation3__select {
         margin-left: 0;
-        padding: 10px 17px; } }
+        padding: 10px 17px;
+        margin-right: -77px; } }
     @media screen and (max-width: 650px) {
       .navigation3__select {
         padding: 7px 10px;
@@ -627,6 +627,7 @@ html {
       bottom: 10%;
       left: 50%;
       opacity: 0;
+      z-index: 20;
       transform: translate(-50%, 50%);
       transition: all ease-in 0.6s; }
       @media screen and (max-width: 950px) {
@@ -709,15 +710,23 @@ html {
   grid-template-rows: repeat(2, 1fr);
   gap: 15px;
   margin: 80px 0; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 750px) {
     .collection__gallery {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);
       gap: 0;
-      margin: 40px 0; } }
+      margin: 40px 0;
+      outline: none; } }
 
 .collection__image {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  @media screen and (max-width: 750px) {
+    .collection__image {
+      width: 90%;
+      height: 90%;
+      margin: 0 auto; } }
   .collection__image:hover button {
     transform: translateY(0);
     opacity: 1; }
@@ -749,11 +758,6 @@ html {
     display: block;
     width: 100%;
     height: 100%; }
-    @media screen and (max-width: 750px) {
-      .collection__image img {
-        width: 90%;
-        height: 90%;
-        margin: 0 auto; } }
 
 .collection__btn {
   clip-path: polygon(19% -13%, 81% -13%, 100% 100%, 0% 100%);
@@ -920,6 +924,9 @@ html {
       background-color: #323030;
       color: #fff;
       cursor: pointer; }
+      @media screen and (max-width: 650px) {
+        .footer__form input[type="submit"] {
+          margin-left: -121px; } }
   .footer__copyright {
     border-top: 1px solid #313131;
     padding: 30px 0;
