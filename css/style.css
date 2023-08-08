@@ -271,7 +271,8 @@ html {
         margin-top: 5px; } }
     @media screen and (max-width: 650px) {
       .header__tabar2 h1 {
-        font-size: 30px; } }
+        font-size: 30px;
+        padding: 5px 0; } }
 
 .header-contain {
   position: relative; }
