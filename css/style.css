@@ -696,10 +696,16 @@ html {
     .gallery__hand-figure:hover .gallery__hand-figure-btn {
       transform: translate(-50%, -25%);
       opacity: 1; }
+      @media screen and (max-width: 450px) {
+        .gallery__hand-figure:hover .gallery__hand-figure-btn {
+          transform: translate(-50%, 50%); } }
     .gallery__hand-figure:hover span {
       opacity: 1; }
     .gallery__hand-figure:hover img {
       outline: none; }
+      @media screen and (max-width: 450px) {
+        .gallery__hand-figure:hover img {
+          outline: 3px solid #fff; } }
     .gallery__hand-figure img {
       display: block;
       width: 100%;
@@ -733,7 +739,10 @@ html {
       @media screen and (max-width: 450px) {
         .gallery__hand-figure-btn {
           font-size: 6px;
-          padding: 4px 8px; } }
+          padding: 4px 8px;
+          opacity: 1;
+          bottom: 18%;
+          transform: translate(-50%, 50%); } }
   .gallery__hand-1 {
     grid-column: 1 / 2;
     grid-row: 1/2; }
@@ -761,6 +770,9 @@ html {
     left: 50%;
     opacity: 0;
     transition: all ease-in 0.4s; }
+    @media screen and (max-width: 450px) {
+      .gallery__hand span {
+        display: none; } }
 
 .collection__heading {
   gap: 45px; }
@@ -818,6 +830,9 @@ html {
   .collection__image:hover button {
     transform: translateY(0);
     opacity: 1; }
+    @media screen and (max-width: 480px) {
+      .collection__image:hover button {
+        transform: translateY(5px); } }
   .collection__image span {
     background-color: #feab12;
     width: 60px;
@@ -882,6 +897,10 @@ html {
     .collection__btn {
       font-size: 12px;
       padding: 5px 22px; } }
+  @media screen and (max-width: 480px) {
+    .collection__btn {
+      opacity: 1;
+      bottom: 3px; } }
 
 .collection__brand {
   display: flex;
@@ -931,7 +950,8 @@ html {
         align-items: center; } }
     @media screen and (max-width: 720px) {
       .footer__navigation {
-        gap: 60px; } }
+        gap: 60px;
+        padding: 35px 0; } }
     .footer__navigation-category h3 {
       font-size: 16px;
       font-family: "lato";
@@ -975,7 +995,7 @@ html {
           border-bottom: 1px solid #74746d; }
   @media screen and (max-width: 720px) {
     .footer__svg {
-      width: 69%;
+      width: 61%;
       margin: 0 auto; } }
   .footer__svg a {
     background-color: #fff;
@@ -990,6 +1010,10 @@ html {
         width: 40px;
         height: 40px;
         margin: 5px 0px 15px 0; } }
+    @media screen and (max-width: 500px) {
+      .footer__svg a {
+        width: 35px;
+        height: 35px; } }
   .footer__svg-1, .footer__svg-2, .footer__svg-3, .footer__svg-4, .footer__svg-5 {
     width: 20px;
     height: 20px;

@@ -42,12 +42,18 @@
       &:hover &-btn {
         transform: translate(-50%, -25%);
         opacity: 1;
+        @media screen and (max-width: 450px) {
+          transform: translate(-50%, 50%);
+        }
       }
       &:hover span {
         opacity: 1;
       }
       &:hover img {
         outline: none;
+        @media screen and (max-width: 450px) {
+          outline: 3px solid #fff;
+        }
       }
       img {
         display: block;
@@ -83,6 +89,9 @@
         @media screen and (max-width: 450px) {
           font-size: 6px;
           padding: 4px 8px;
+          opacity: 1;
+          bottom: 18%;
+          transform: translate(-50%, 50%);
         }
       }
     }
@@ -119,6 +128,9 @@
       left: 50%;
       opacity: 0;
       transition: all ease-in 0.4s;
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
     }
   }
 }
@@ -185,6 +197,9 @@
     &:hover button {
       transform: translateY(0);
       opacity: 1;
+      @media screen and (max-width: 480px) {
+        transform: translateY(5px);
+      }
     }
     span {
       background-color: $-color-tertiary;
@@ -255,6 +270,10 @@
     @media screen and (max-width: 960px) {
       font-size: 12px;
       padding: 5px 22px;
+    }
+    @media screen and (max-width: 480px) {
+      opacity: 1;
+      bottom: 3px;
     }
   }
   &__brand {

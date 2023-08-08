@@ -10,6 +10,7 @@
     }
     @media screen and (max-width: 720px) {
       gap: 60px;
+      padding: 35px 0;
     }
     &-category {
       h3 {
@@ -63,7 +64,7 @@
   }
   &__svg {
     @media screen and (max-width: 720px) {
-      width: 69%;
+      width: 61%;
       margin: 0 auto;
     }
     a {
@@ -78,6 +79,10 @@
         width: 40px;
         height: 40px;
         margin: 5px 0px 15px 0;
+      }
+      @media screen and (max-width: 500px) {
+        width: 35px;
+        height: 35px;
       }
     }
     &-1,
