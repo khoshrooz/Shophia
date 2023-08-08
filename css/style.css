@@ -491,18 +491,18 @@ html {
       background-color: #000; }
   @media screen and (max-width: 840px) {
     .header-scrol {
-      left: 43%; } }
+      left: 45%; } }
   @media screen and (max-width: 720px) {
     .header-scrol {
       bottom: 6%;
-      left: 44%; }
+      left: 48%; }
       .header-scrol span {
         width: 7px;
         height: 7px;
         margin-left: 3px; } }
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 500px) {
     .header-scrol {
-      left: 42%; } }
+      left: 46%; } }
 
 .header-information {
   display: flex;
