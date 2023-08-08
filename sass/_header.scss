@@ -58,6 +58,19 @@
         &::before {
           top: 10px;
         }
+        @media screen and (max-width: 500px) {
+          width: 25px;
+          &::after,
+          &::before {
+            width: 25px;
+          }
+          &::after {
+            top: -8px;
+          }
+          &::before {
+            top: 8px;
+          }
+        }
       }
     }
     h1 {
@@ -109,6 +122,20 @@
     @media screen and (max-width: 850px) {
       left: 40%;
     }
+    @media screen and (max-width: 720px) {
+      outline: none;
+      padding: 5px;
+      left: 44.5%;
+    }
+    @media screen and (max-width: 600px) {
+      left: 43%;
+    }
+    @media screen and (max-width: 550px) {
+      left: 42%;
+    }
+    @media screen and (max-width: 470px) {
+      left: 42%;
+    }
   }
   &-heading {
     text-align: center;
@@ -129,6 +156,12 @@
       @media screen and (max-width: 850px) {
         font-size: 11px;
       }
+      @media screen and (max-width: 720px) {
+        margin-bottom: 5px;
+      }
+      @media screen and (max-width: 475px) {
+        font-size: 8px;
+      }
     }
     h1 {
       font-size: 58px;
@@ -142,6 +175,12 @@
       }
       @media screen and (max-width: 850px) {
         font-size: 26px;
+      }
+      @media screen and (max-width: 720px) {
+        margin-bottom: 5px;
+      }
+      @media screen and (max-width: 475px) {
+        font-size: 20px;
       }
     }
     h3 {
@@ -165,9 +204,18 @@
           font-size: 13px;
         }
       }
+      @media screen and (max-width: 720px) {
+        margin-top: 0;
+      }
       span {
         font-size: 25px;
         margin-right: 10px;
+      }
+      @media screen and (max-width: 470px) {
+        font-size: 13px;
+        span {
+          font-size: 21px;
+        }
       }
     }
   }
@@ -205,6 +253,9 @@
       right: 25px;
       top: 7px;
       background-color: #fff;
+      @media screen and (max-width: 720px) {
+        display: none;
+      }
     }
     &::before {
       left: 25px;
@@ -212,12 +263,18 @@
     }
     h2 {
       font-size: 20px;
+      @media screen and (max-width: 475px) {
+        font-size: 12px;
+      }
     }
     span {
       display: inline-block;
       width: 55px;
       height: 1px;
       background-color: #fff;
+      @media screen and (max-width: 720px) {
+        display: none;
+      }
     }
   }
   &-btn {
@@ -242,7 +299,15 @@
     @media screen and (max-width: 850px) {
       width: 100%;
       bottom: -9%;
+      font-size: 15px;
       left: 0;
+    }
+    @media screen and (max-width: 500px) {
+      left: 0;
+      bottom: 4px;
+      font-size: 11px;
+      padding: 7px 9px;
+      width: 23%;
     }
   }
   &-scrol {
@@ -260,6 +325,17 @@
       &:hover {
         background-color: #000;
       }
+    }
+    @media screen and (max-width: 720px) {
+      bottom: 6%;
+      span {
+        width: 7px;
+        height: 7px;
+        margin-left: 3px;
+      }
+    }
+    @media screen and (max-width: 475px) {
+      left: 46%;
     }
   }
   &-information {

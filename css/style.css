@@ -48,6 +48,10 @@ html {
       .heading-square {
         width: 10px;
         height: 10px; } }
+    @media screen and (max-width: 500px) {
+      .heading-square {
+        width: 7px;
+        height: 7px; } }
   .heading-line {
     display: inline-block;
     background-color: #eaeaea;
@@ -240,6 +244,15 @@ html {
           top: -9px; }
         .header__tabar2 span::before {
           top: 10px; } }
+    @media screen and (max-width: 850px) and (max-width: 500px) {
+      .header__tabar2 span {
+        width: 25px; }
+        .header__tabar2 span::after, .header__tabar2 span::before {
+          width: 25px; }
+        .header__tabar2 span::after {
+          top: -8px; }
+        .header__tabar2 span::before {
+          top: 8px; } }
   .header__tabar2 h1 {
     font-family: "Krinkes Decor PERSONAL USE";
     font-size: 72px;
@@ -288,6 +301,20 @@ html {
   @media screen and (max-width: 850px) {
     .header-text {
       left: 40%; } }
+  @media screen and (max-width: 720px) {
+    .header-text {
+      outline: none;
+      padding: 5px;
+      left: 44.5%; } }
+  @media screen and (max-width: 600px) {
+    .header-text {
+      left: 43%; } }
+  @media screen and (max-width: 550px) {
+    .header-text {
+      left: 42%; } }
+  @media screen and (max-width: 470px) {
+    .header-text {
+      left: 42%; } }
 
 .header-heading {
   text-align: center;
@@ -308,6 +335,12 @@ html {
     @media screen and (max-width: 850px) {
       .header-heading h2 {
         font-size: 11px; } }
+    @media screen and (max-width: 720px) {
+      .header-heading h2 {
+        margin-bottom: 5px; } }
+    @media screen and (max-width: 475px) {
+      .header-heading h2 {
+        font-size: 8px; } }
   .header-heading h1 {
     font-size: 58px;
     font-weight: 400;
@@ -321,6 +354,12 @@ html {
     @media screen and (max-width: 850px) {
       .header-heading h1 {
         font-size: 26px; } }
+    @media screen and (max-width: 720px) {
+      .header-heading h1 {
+        margin-bottom: 5px; } }
+    @media screen and (max-width: 475px) {
+      .header-heading h1 {
+        font-size: 20px; } }
   .header-heading h3 {
     font-size: 31px;
     margin-top: -15px; }
@@ -339,9 +378,17 @@ html {
         font-size: 18px; }
         .header-heading h3 span {
           font-size: 13px; } }
+    @media screen and (max-width: 720px) {
+      .header-heading h3 {
+        margin-top: 0; } }
     .header-heading h3 span {
       font-size: 25px;
       margin-right: 10px; }
+    @media screen and (max-width: 470px) {
+      .header-heading h3 {
+        font-size: 13px; }
+        .header-heading h3 span {
+          font-size: 21px; } }
 
 .header-upto {
   display: flex;
@@ -371,16 +418,25 @@ html {
     right: 25px;
     top: 7px;
     background-color: #fff; }
+    @media screen and (max-width: 720px) {
+      .header-upto::after, .header-upto::before {
+        display: none; } }
   .header-upto::before {
     left: 25px;
     bottom: 48px; }
   .header-upto h2 {
     font-size: 20px; }
+    @media screen and (max-width: 475px) {
+      .header-upto h2 {
+        font-size: 12px; } }
   .header-upto span {
     display: inline-block;
     width: 55px;
     height: 1px;
     background-color: #fff; }
+    @media screen and (max-width: 720px) {
+      .header-upto span {
+        display: none; } }
 
 .header-btn {
   font-size: 23px;
@@ -405,7 +461,15 @@ html {
     .header-btn {
       width: 100%;
       bottom: -9%;
+      font-size: 15px;
       left: 0; } }
+  @media screen and (max-width: 500px) {
+    .header-btn {
+      left: 0;
+      bottom: 4px;
+      font-size: 11px;
+      padding: 7px 9px;
+      width: 23%; } }
 
 .header-scrol {
   position: absolute;
@@ -421,6 +485,16 @@ html {
     transition: all 0.3s; }
     .header-scrol span:hover {
       background-color: #000; }
+  @media screen and (max-width: 720px) {
+    .header-scrol {
+      bottom: 6%; }
+      .header-scrol span {
+        width: 7px;
+        height: 7px;
+        margin-left: 3px; } }
+  @media screen and (max-width: 475px) {
+    .header-scrol {
+      left: 46%; } }
 
 .header-information {
   display: flex;
@@ -592,6 +666,12 @@ html {
       .gallery__heading h2 {
         font-size: 16px;
         margin: 0 15px; } }
+  @media screen and (max-width: 500px) {
+    .gallery__heading {
+      gap: 17px;
+      margin-top: 20px; }
+      .gallery__heading h2 {
+        margin: 0; } }
 
 .gallery__hand {
   padding: 70px 0;
@@ -752,8 +832,18 @@ html {
         height: 45px; }
         .collection__image span::after {
           font-size: 12px;
-          top: 13px;
+          top: 14px;
           left: 10px; } }
+    @media screen and (max-width: 500px) {
+      .collection__image span {
+        width: 37px;
+        height: 37px;
+        top: 12px;
+        left: 12px; }
+        .collection__image span::after {
+          font-size: 10px;
+          top: 12px;
+          left: 9px; } }
   .collection__image img {
     display: block;
     width: 100%;

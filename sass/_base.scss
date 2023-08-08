@@ -63,6 +63,10 @@ html {
       width: 10px;
       height: 10px;
     }
+    @media screen and (max-width: 500px) {
+      width: 7px;
+      height: 7px;
+    }
   }
   &-line {
     display: inline-block;
