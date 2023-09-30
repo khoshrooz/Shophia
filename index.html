@@ -58,7 +58,7 @@
             <option value="DERHAM">DERHAM</option>
             <option value="POND">POND</option>
           </select>
-                <span></span>
+                <span class="hamburger"></span>
             </div>
         </section>
         <figure class="header-contain">
@@ -328,6 +328,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".navigation2")
+        hamburger.addEventListener("click", () => {
+
+            nav.classList.toggle('open')
+        })
+    </script>
 </body>
 
 </html>

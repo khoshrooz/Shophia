@@ -697,14 +697,14 @@ html {
     .gallery__hand-figure:hover .gallery__hand-figure-btn {
       transform: translate(-50%, -25%);
       opacity: 1; }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 500px) {
         .gallery__hand-figure:hover .gallery__hand-figure-btn {
           transform: translate(-50%, 50%); } }
     .gallery__hand-figure:hover span {
       opacity: 1; }
     .gallery__hand-figure:hover img {
       outline: none; }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 500px) {
         .gallery__hand-figure:hover img {
           outline: 3px solid #fff; } }
     .gallery__hand-figure img {
@@ -733,11 +733,7 @@ html {
         .gallery__hand-figure-btn {
           font-size: 11px;
           padding: 7px 10px; } }
-      @media screen and (max-width: 580px) {
-        .gallery__hand-figure-btn {
-          font-size: 7px;
-          padding: 5px 10px; } }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 500px) {
         .gallery__hand-figure-btn {
           font-size: 6px;
           padding: 4px 8px;
@@ -771,7 +767,7 @@ html {
     left: 50%;
     opacity: 0;
     transition: all ease-in 0.4s; }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 500px) {
       .gallery__hand span {
         display: none; } }
 
@@ -799,9 +795,9 @@ html {
         margin: 0 7px; } }
   @media screen and (max-width: 470px) {
     .collection__heading {
-      gap: 5px; }
+      gap: 4px; }
       .collection__heading h2 {
-        font-size: 12px; } }
+        font-size: 10px; } }
 
 .collection__gallery {
   outline: 1px solid #eaeaea;
@@ -901,7 +897,7 @@ html {
   @media screen and (max-width: 480px) {
     .collection__btn {
       opacity: 1;
-      bottom: 3px; } }
+      bottom: 5px; } }
 
 .collection__brand {
   display: flex;
